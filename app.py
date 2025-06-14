@@ -31,28 +31,16 @@ family_history = 1 if family_history == "Yes" else 0
 favc = st.selectbox("Konsumsi makanan tinggi kalori?", ["Yes", "No"])
 favc = 1 if favc == "Yes" else 0
 
-fcvc = st.slider("Frekuensi makan sayur (1–3)", 1.0, 3.0, 2.0)
-ncp = st.slider("Jumlah makan utama per hari (1–4)", 1.0, 4.0, 3.0)
-
 caec = st.selectbox("Frekuensi ngemil / fast food", ["no", "Sometimes", "Frequently", "Always"])
 caec = {"no": 0, "Sometimes": 1, "Frequently": 2, "Always": 3}[caec]
-
-smoke = st.selectbox("Merokok?", ["Yes", "No"])
-smoke = 1 if smoke == "Yes" else 0
 
 ch2o = st.slider("Minum air harian (liter)", 1.0, 3.0, 2.0)
 
 scc = st.selectbox("Kontrol kalori?", ["Yes", "No"])
 scc = 1 if scc == "Yes" else 0
 
-faf = st.slider("Aktivitas fisik mingguan (0–3)", 0.0, 3.0, 1.0)
-tue = st.slider("Durasi penggunaan teknologi (0–3 jam)", 0.0, 3.0, 1.0)
-
 calc = st.selectbox("Konsumsi alkohol", ["Never", "Rarely", "Frequently", "Always"])
 calc = {"Never": 0, "Rarely": 1, "Frequently": 2, "Always": 3}[calc]
-
-mtrans = st.selectbox("Transportasi", ["Walking", "Public_Transportation", "Automobile", "Bike", "Motorbike"])
-mtrans = {"Walking": 0, "Public_Transportation": 1, "Automobile": 2, "Bike": 3, "Motorbike": 4}[mtrans]
 
 # ===============================
 # Susun input sesuai urutan fitur saat training
